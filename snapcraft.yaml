@@ -23,8 +23,8 @@ parts:
       apt-get install curl -y
       curl -Lo skaffold https://storage.googleapis.com/skaffold/releases/v0.26.0/skaffold-linux-amd64
       chmod +x ./skaffold
-      mkdir -p /build/parts/skaffold/install/bin
-      mv ./skaffold /build/parts/skaffold/install/bin/.
+      mkdir -p $SNAPCRAFT_PART_INSTALL/bin/
+      mv ./skaffold $SNAPCRAFT_PART_INSTALL/bin/.
   git:
     source: https://github.com/git/git
     source-type: git
