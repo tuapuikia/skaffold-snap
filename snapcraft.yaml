@@ -1,5 +1,5 @@
 name: skaffold
-version: v0.26.0
+version: v1.18.0
 summary: Easy and Repeatable Kubernetes Development
 description: |
   Skaffold is a command line tool that facilitates continuous development for Kubernetes applications.
@@ -21,7 +21,7 @@ parts:
     source: .
     override-build: |
       apt-get install curl -y
-      curl -Lo skaffold https://storage.googleapis.com/skaffold/releases/v0.26.0/skaffold-linux-amd64
+      curl -Lo skaffold https://storage.googleapis.com/skaffold/releases/v1.18.0/skaffold-linux-amd64
       chmod +x ./skaffold
       mkdir -p $SNAPCRAFT_PART_INSTALL/bin/
       mv ./skaffold $SNAPCRAFT_PART_INSTALL/bin/.
